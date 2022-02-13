@@ -1,0 +1,46 @@
+﻿<Window x:Class="DynamicLocalizationSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DynamicLocalizationSample"
+        mc:Ignorable="d"
+        local:LocalizationProvider.TitleID="Dynamic_Localization_App" Height="300" Width="400">
+    <Grid>
+        <Menu HorizontalAlignment="Left" VerticalAlignment="Top" Width="400">
+            <MenuItem Margin="10,5,5,5">
+                <MenuItem.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock local:LocalizationProvider.ContentID="Language"/>
+                    </StackPanel>
+                </MenuItem.Header>
+                <MenuItem Command="{Binding SpanishLanguageCmd}" >
+                    <MenuItem.Header>
+                        <TextBlock local:LocalizationProvider.ContentID="Spanish"/>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Command="{Binding EnglishLanguageCmd}" >
+                    <MenuItem.Header>
+                        <TextBlock local:LocalizationProvider.ContentID="English"/>
+                    </MenuItem.Header>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBlock x:Name ="textBlock" HorizontalAlignment = "Left"
+          TextWrapping = "Wrap" local:LocalizationProvider.ContentID="This_Is_A_Text_Block"
+         VerticalAlignment = "Top" Height = "32" Width = "149" Margin="21,56,0,0" />
+        <TextBlock x:Name = "textBlock_Copy" HorizontalAlignment = "Left" TextWrapping = "Wrap" 
+            local:LocalizationProvider.ContentID = "This_Is_A_Another_Text_Block"
+            VerticalAlignment = "Top" Height = "32" Width = "201" Margin="21,88,0,0" />
+        <TextBlock x:Name = "textBlock_Copy1" HorizontalAlignment = "Left"
+            TextWrapping = "Wrap" local:LocalizationProvider.ContentID = "Yet_A_Another_Text_Block"
+            VerticalAlignment = "Top" Height = "32" Width = "149" Margin="21,120,0,0" />
+        <Button local:LocalizationProvider.ContentID="Click_Me" Margin="10,214,240,24"/>
+        <GroupBox local:LocalizationProvider.ContentID="Grouped_Controls" Width="160" Height="160" Margin="200,46,10,50">
+            <StackPanel>
+                <RadioButton local:LocalizationProvider.ContentID="First_Option" Margin="5,10,20,5"/>
+                <RadioButton local:LocalizationProvider.ContentID="Second_Option" Margin="5,5,20,62"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>

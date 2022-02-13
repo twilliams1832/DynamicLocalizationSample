@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLocalizationSample", "DynamicLocalizationSample\DynamicLocalizationSample.csproj", "{B4579437-ECA4-4E8B-A96E-01155126DEE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4579437-ECA4-4E8B-A96E-01155126DEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4579437-ECA4-4E8B-A96E-01155126DEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4579437-ECA4-4E8B-A96E-01155126DEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4579437-ECA4-4E8B-A96E-01155126DEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CE2EFDE-6F6C-4D4F-859C-0950E0DCAA91}
+	EndGlobalSection
+EndGlobal
